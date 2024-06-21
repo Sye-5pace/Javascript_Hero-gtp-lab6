@@ -30,3 +30,13 @@ const Superhero = (name, secretIdentity, powers, weakness) => {
 
 // Create a new superhero using the constructor
 let batman = new Superhero('The Flash', 'Barry Allens', ['speed', 'intelligence'], 'family');
+
+
+// Task #4
+// Add a method using prototype for all Superhero instances
+Superhero.prototype.usePower = function(powerName) {
+  console.log(`${this.name} uses ${powerName}!`);
+};
+
+// Example usage:
+batman.usePower('kick boxing'); 
