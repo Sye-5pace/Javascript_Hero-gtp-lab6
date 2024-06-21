@@ -18,3 +18,15 @@ superhero.revealIdentity = function() {
 // Example:
 superhero.usePower('heat vision'); 
 superhero.revealIdentity();
+
+// Task #3
+// Constructor function for Superhero
+const Superhero = (name, secretIdentity, powers, weakness) => {
+  this.name = name;
+  this.secretIdentity = secretIdentity;
+  this.powers = powers;
+  this.weakness = weakness;
+}
+
+// Create a new superhero using the constructor
+let batman = new Superhero('The Flash', 'Barry Allens', ['speed', 'intelligence'], 'family');
