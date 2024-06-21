@@ -29,7 +29,7 @@ const Superhero = (name, secretIdentity, powers, weakness) => {
 }
 
 // Create a new superhero using the constructor
-let batman = new Superhero('The Flash', 'Barry Allens', ['speed', 'intelligence'], 'family');
+let batman = new Superhero('The Flash', 'Barry Allens', ['super speed', 'intelligence'], 'speed force');
 
 
 // Task #4
@@ -40,3 +40,24 @@ Superhero.prototype.usePower = function(powerName) {
 
 // Example usage:
 batman.usePower('kick boxing'); 
+
+
+// Task #5
+// Array of superheroes
+let superheroes = [
+  new Superhero('Wonder Woman', 'Diana Prince', ['super strength', 'lasso of truth'], 'mystical weapons'),
+  new Superhero('Dr Strange', 'Steven Strange', ['mystic art'], 'mystic acts')
+];
+
+// Example: Using forEach to log all superhero names
+superheroes.forEach(function(hero) {
+  console.log(hero.name);
+});
+
+// Example: Using map to create an array of superhero secret identities
+let secretIdentities = superheroes.map(function(hero) {
+  return hero.secretIdentity;
+});
+
+console.log(secretIdentities); 
+
