@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.scss">
     <title>Javascript Hero</title>
   </head>
   <body>
-    
+    <div class="container">
+      <h1>Superhero Battle Simulator</h1>
+      <div class="battlefield">
+        <div class="superhero" id="hero1">
+          <h2 id="hero1-name">Hero 1</h2>
+          <p id="hero1-action">Ready for battle</p>
+        </div>
+        <div class="superhero" id="hero2">
+          <h2 id="hero2-name">Hero 2</h2>
+          <p id="hero2-action">Ready for battle</p>
+        </div>
+      </div>
+      <button id="battleButton">Start Battle</button>
+    </div>
     <script type="module" src="/main.js"></script>
     <script type="module" src="/script.js"></script>
   </body>

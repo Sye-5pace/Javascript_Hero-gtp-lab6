@@ -1,0 +1,52 @@
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$hero-color: #f4a261;
+$battle-color: #264653;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  background: #e9c46a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.battlefield {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.superhero {
+    width: 150px;
+    padding: 10px;
+    border: 2px solid $battle-color;
+    border-radius: 10px;
+    background: $hero-color;
+}
+
+#battleButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: $battle-color;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background: darken($battle-color, 10%);
+  }
+}
